@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+       <header>
+           <h1>Урок "Формы": теги и их атрибуты</h1>
+           <h2>Расскажите немного о себе...</h2>
+           <p>Попробуйте создать аналогичную форму, для целей демонстрации вполне подойдут и вымышленные</p>
+       </header>
+        <form action="formdata.php" method="POST" name="form1">
+            <fieldset>
+            <legend>Коротко о себе</legend>
+                <ul class="about">
+                    <li>Имя: <input type="text" name="firstName"></li>
+                    <li>Фамилия: <input type="text" name="secondName"></li>
+                    <li>Пол:<input type="radio" name="gender" value="male" checked>мужской<input type="radio" name="gender" value="female">женский</li>
+                    <li>Возраст: <input type="text" name="howOld" size="2"> лет</li>
+                </ul>
+            </fieldset>
+        
+            <fieldset>
+            <legend>Подробнее о себе</legend>
+                <ul class="moreAbout">
+                    <li><input type="radio" name="sex" value="youngMan" checked>Молодой человек</li>
+                    <li><input type="radio" name="sex" value="woman">Девушка</li>
+                    <li><input type="text" name="birthdayDate"> Дата рождения</li>
+                    <li><input type="text" name="maritalStatus"> Семейное положение</li>
+                    <li><input type="text" name="socialStatus"> Социальный статус</li>
+                    <li><input type="text" name="location"> Местожительство</li>
+                </ul>    
+                <p>Что вы обычно делаете на выходных:</p>
+                <ul>
+                    <li><input type="checkbox" name="rest" value="sleep">Сплю</li>
+                    <li><input type="checkbox" name="rest" value="withFriends">Гуляю с друзьями</li>
+                    <li><input type="checkbox" name="rest" value="goFishing">Хожу на рыбалку</li>
+                    <li><input type="checkbox" name="rest" value="playGames">Играю в игры</li>
+                </ul>
+                <p>Рассказать о формах в книге, посвященной HTML:</p>
+                <select name="aboutForms">
+                    <option value="frequency">Site frequency</option>
+                    <option value="formElements">Form elements</option>
+                    <option value="buildingForms">Building new forms</option>
+                </select>
+                <p>Сколько книг Вы прочитали за свою жизнь:</p>
+                <ul>
+                    <li><input type="radio" name="booksRead">0-10</li>
+                    <li><input type="radio" name="booksRead">11-20</li>
+                    <li><input type="radio" name="booksRead">21-50</li>
+                    <li><input type="radio" name="booksRead">50+</li>
+                </ul>
+                <p class="headerNearElem">Ваши комментарии:</p>
+                <textarea name="comments" cols="60" rows="10"></textarea>
+                <br>
+                <select name="positions" id="positions" multiple size="3">
+                    <option value="firstPosition">Первая позиция</option>
+                    <option value="secondPosition" selected>Вторая позиция</option>
+                    <option value="thirdPosition">Третья позиция</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>И в заключении</legend>
+                <input type="text" size="30" value="Это поле было введено до вас">
+                <p class="headerNearElem">Email:</p>
+                <input type="email" size="30">
+                <p class="headerNearElem">Хотите подписаться на самую модную рассылку спама?</p>
+                <i>Выберите категории</i>
+                <ul class="category">
+                    <li><input type="checkbox" name="spamCategory" value="equipment">Оборудование</li>
+                    <li><input type="checkbox" name="spamCategory" value="howCook">Как приготовить обеды</li>
+                    <li><input type="checkbox" name="spamCategory" value="earnMillion">Заработай миллион за два дня!</li>
+                </ul>
+                <p>На сколько сложная задача:</p>
+                <ul>
+                    <li><input type="radio" name="howMuchDifficult" value="easy" checked>Совсем нет</li>
+                    <li><input type="radio" name="howMuchDifficult" value="middle">Так себе</li>
+                    <li><input type="radio" name="howMuchDifficult" value="hardcore">Еле справились</li>
+                <ul>
+            </fieldset>
+        </form>
+    </div>        
+</body>
+</html>

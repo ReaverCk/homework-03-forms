@@ -1,0 +1,35 @@
+.wrapper {
+    width: 720px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about li{
+    padding: 10px 0;
+}
+
+.moreAbout li {
+    font-size: 13px;
+}
+
+form p {
+font-weight: bold;
+}
+
+.headerNearElem {
+    margin-bottom: 0;
+}
+
+.category {
+    margin-top: 10px;
+}
