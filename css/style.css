@@ -22,14 +22,14 @@ ul {
     font-size: 13px;
 }
 
-form p {
-font-weight: bold;
-}
-
 .headerNearElem {
     margin-bottom: 0;
 }
 
 .category {
     margin-top: 10px;
+}
+
+b {
+    line-height: 40px;
 }
