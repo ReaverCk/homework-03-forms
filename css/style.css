@@ -26,6 +26,10 @@ ul {
     margin-bottom: 0;
 }
 
+form p {
+    font-weight: bold;
+}
+
 .category {
     margin-top: 10px;
 }
