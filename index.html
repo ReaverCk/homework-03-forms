@@ -12,49 +12,49 @@
            <h2>Расскажите немного о себе...</h2>
            <p>Попробуйте создать аналогичную форму, для целей демонстрации вполне подойдут и вымышленные</p>
        </header>
-        <form action="formdata.php" method="POST" name="form1">
+        <form action="#" method="POST" name="form1">
             <fieldset>
-            <legend>Коротко о себе</legend>
+                <legend>Коротко о себе</legend>
                 <ul class="about">
-                    <li>Имя: <input type="text" name="firstName"></li>
-                    <li>Фамилия: <input type="text" name="secondName"></li>
-                    <li>Пол:<input type="radio" name="gender" value="male" checked>мужской<input type="radio" name="gender" value="female">женский</li>
-                    <li>Возраст: <input type="text" name="howOld" size="2"> лет</li>
+                    <li><label for="firstName">Имя: </label><input type="text" name="firstName" id="firstName"></li>
+                    <li><label for="secondName">Фамилия: </label><input type="text" name="secondName" id="secondName"></li>
+                    <li>Пол:<input type="radio" name="gender" value="male" id="male" checked><label for="male">мужской</label><input type="radio" name="gender" value="female" id="female"><label for="female">женский</label></li>
+                    <li><label for="howOld">Возраст: </label><input type="text" name="howOld" size="2" id="howOld"> лет</li>
                 </ul>
             </fieldset>
         
             <fieldset>
-            <legend>Подробнее о себе</legend>
+                <legend>Подробнее о себе</legend>
                 <ul class="moreAbout">
-                    <li><input type="radio" name="sex" value="youngMan" checked>Молодой человек</li>
-                    <li><input type="radio" name="sex" value="woman">Девушка</li>
-                    <li><input type="text" name="birthdayDate"> Дата рождения</li>
-                    <li><input type="text" name="maritalStatus"> Семейное положение</li>
-                    <li><input type="text" name="socialStatus"> Социальный статус</li>
-                    <li><input type="text" name="location"> Местожительство</li>
+                    <li><input type="radio" name="sex" value="youngMan" id="youngMan" checked><label for="youngMan">Молодой человек</label></li>
+                    <li><input type="radio" name="sex" value="woman" id="woman"><label for="woman">Девушка</li>
+                    <li><input type="text" name="birthdayDate" id="birthdayDate"><label for="birthdayDate"> Дата рождения</label></li>
+                    <li><input type="text" name="maritalStatus" id="maritalStatus"><label for="maritalStatus"> Семейное положение</label></li>
+                    <li><input type="text" name="socialStatus" id="socialStatus"><label for="socialStatus"> Социальный статус</label></li>
+                    <li><input type="text" name="location" id="location"><label for="location"> Местожительство</label></li>
                 </ul>    
                 <p>Что вы обычно делаете на выходных:</p>
                 <ul>
-                    <li><input type="checkbox" name="rest" value="sleep">Сплю</li>
-                    <li><input type="checkbox" name="rest" value="withFriends">Гуляю с друзьями</li>
-                    <li><input type="checkbox" name="rest" value="goFishing">Хожу на рыбалку</li>
-                    <li><input type="checkbox" name="rest" value="playGames">Играю в игры</li>
+                    <li><input type="checkbox" name="rest" value="sleep" id="sleep"><label for="sleep">Сплю</label></li>
+                    <li><input type="checkbox" name="rest" value="withFriends" id="withFriends"><label for="withFriends">Гуляю с друзьями</label></li>
+                    <li><input type="checkbox" name="rest" value="goFishing" id="goFishing"><label for="goFishing">Хожу на рыбалку</label></li>
+                    <li><input type="checkbox" name="rest" value="playGames" id="playGames"><label for="playGames">Играю в игры</label></li>
                 </ul>
-                <p>Рассказать о формах в книге, посвященной HTML:</p>
-                <select name="aboutForms">
+                <p><label for="aboutForms">Рассказать о формах в книге, посвященной HTML:</label></p>
+                <select name="aboutForms" id="aboutForms">
                     <option value="frequency">Site frequency</option>
                     <option value="formElements">Form elements</option>
                     <option value="buildingForms">Building new forms</option>
                 </select>
                 <p>Сколько книг Вы прочитали за свою жизнь:</p>
                 <ul>
-                    <li><input type="radio" name="booksRead">0-10</li>
-                    <li><input type="radio" name="booksRead">11-20</li>
-                    <li><input type="radio" name="booksRead">21-50</li>
-                    <li><input type="radio" name="booksRead">50+</li>
+                    <li><input type="radio" name="booksRead" id="0-10"><label for="0-10">0-10</label></li>
+                    <li><input type="radio" name="booksRead" id="11-20"><label for="11-20">11-20</label></li>
+                    <li><input type="radio" name="booksRead" id="21-50"><label for="21-50">21-50</label></li>
+                    <li><input type="radio" name="booksRead" id="50more"><label for="50more">50+</label></li>
                 </ul>
-                <p class="headerNearElem">Ваши комментарии:</p>
-                <textarea name="comments" cols="60" rows="10"></textarea>
+                <p class="headerNearElem"><label for="comments">Ваши комментарии:</label></p>
+                <textarea name="comments" id="comments" cols="60" rows="10"></textarea>
                 <br>
                 <select name="positions" id="positions" multiple size="3">
                     <option value="firstPosition">Первая позиция</option>
@@ -66,20 +66,20 @@
             <fieldset>
                 <legend>И в заключении</legend>
                 <input type="text" size="30" value="Это поле было введено до вас">
-                <p class="headerNearElem">Email:</p>
-                <input type="email" size="30">
+                <p class="headerNearElem"><label for="mail">Email:</label></p>
+                <input type="email" id="mail" size="30">
                 <p class="headerNearElem">Хотите подписаться на самую модную рассылку спама?</p>
                 <i>Выберите категории</i>
                 <ul class="category">
-                    <li><input type="checkbox" name="spamCategory" value="equipment">Оборудование</li>
-                    <li><input type="checkbox" name="spamCategory" value="howCook">Как приготовить обеды</li>
-                    <li><input type="checkbox" name="spamCategory" value="earnMillion">Заработай миллион за два дня!</li>
+                    <li><input type="checkbox" name="spamCategory" value="equipment" id="equipment"><label for="equipment">Оборудование</label></li>
+                    <li><input type="checkbox" name="spamCategory" value="howCook" id="howCook"><label for="howCook">Как приготовить обеды</label></li>
+                    <li><input type="checkbox" name="spamCategory" value="earnMillion" id="earnMillion"><label for="earnMillion">Заработай миллион за два дня!</label></li>
                 </ul>
                 <p>На сколько сложная задача:</p>
                 <ul>
-                    <li><input type="radio" name="howMuchDifficult" value="easy" checked>Совсем нет</li>
-                    <li><input type="radio" name="howMuchDifficult" value="middle">Так себе</li>
-                    <li><input type="radio" name="howMuchDifficult" value="hardcore">Еле справились</li>
+                    <li><input type="radio" name="howMuchDifficult" value="easy" id="easy" checked><label for="easy">Совсем нет</label></li>
+                    <li><input type="radio" name="howMuchDifficult" value="middle" id="middle"><label for="middle">Так себе</label></li>
+                    <li><input type="radio" name="howMuchDifficult" value="hardcore" id="hardcore"><label for="hardcore">Еле справились</label></li>
                 <ul>
             </fieldset>
         </form>
