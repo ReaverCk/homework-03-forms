@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+fieldset {
+    margin: 20px 0;
+}
+
 legend {
     font-weight: bold;
 }
@@ -14,6 +18,10 @@ ul {
     margin: 0;
 }
 
+.positions {
+    margin: 15px 0;
+}
+
 .about li{
     padding: 10px 0;
 }
@@ -22,12 +30,18 @@ ul {
     font-size: 13px;
 }
 
-.headerNearElem {
-    margin-bottom: 0;
+.aboutForms {
+    display: block;
 }
 
-form p {
-    font-weight: bold;
+.headerNearElem {
+    display: block;
+    line-height: inherit;
+    margin-top: 15px;
+}
+
+.comment-block {
+    display: block;
 }
 
 .category {
